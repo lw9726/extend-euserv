@@ -2,8 +2,9 @@ name: schedule-extend-euserv
 
 on:
   push:
+  workflow_dispatch:
   schedule:
-    - cron: '15 21 */9 * *'
+    - cron: '19 22 */7 * *'
 jobs:
   extend-euserv__main__:
     strategy:
